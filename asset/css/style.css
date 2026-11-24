@@ -63,7 +63,7 @@ color: darkgreen;
       background-size: cover;
       background-position: center;
       position: relative ;
-      animation: changeBackground 20s infinite alternate;
+      animation: changeBackground 10s infinite alternate;
 }
 
 @keyframes changeBackground {
@@ -147,4 +147,36 @@ color: darkgreen;
     background-color: rgb(129, 16, 16);
     color: rgb(22, 9, 9);
     transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 768px) {
+    nav .menu { 
+        flex-direction: column; 
+        gap: 10px; 
+    }
+    nav .menu .logo a { 
+        font-size: 28px; 
+    }
+    .menu ul {
+         flex-wrap: wrap; 
+         justify-content: center; 
+        }
+    .menu ul li a { 
+        font-size: 14px;
+        padding: 8px; 
+        }
+    .center .title { 
+        font-size: 32px; 
+    }
+    .center .sub-title { font-size: 21px; }
+    .center .btns button { width: 130px; height: 45px; font-size: 15px; margin: 5px; }
+    .image { min-height: 100vh; }
+}
+
+@media screen and (max-width: 480px) {
+    .menu ul li a { font-size: 12px; padding: 6px; }
+    .center .title { font-size: 26px; }
+    .center .sub-title { font-size: 17px; }
+    .center .btns { display: flex; flex-wrap: wrap; justify-content: center; }
 }
